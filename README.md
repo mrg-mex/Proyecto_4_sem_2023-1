@@ -7,8 +7,8 @@ Armado e implementación de un robot móvil Nvidia Kaya
 -Leslie Dayana Bolaños Viquez
 - Eduardo Vega Solorzano
 - Kevin de la Rosa Romero
--Velazquez Sanchez Jose Emiliano
--Rivera Ibarra Juan Luis
+- Velazquez Sanchez Jose Emiliano
+- Rivera Ibarra Juan Luis
 
 
 ## Objetivo
