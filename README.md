@@ -3,12 +3,12 @@ Armado e implementación de un robot móvil Nvidia Kaya
 
 ### Participantes
 - Erik Peña Medina (Responsable)
-- Yeshua González Jiménez
--Leslie Dayana Bolaños Viquez
-- Eduardo Vega Solorzano
-- Kevin de la Rosa Romero
-- Velazquez Sanchez Jose Emiliano
-- Rivera Ibarra Juan Luis
+- Yeshua González Jiménez (participante)
+-Leslie Dayana Bolaños Viquez (participante)
+- Eduardo Vega Solorzano (participante)
+- Kevin de la Rosa Romero (participante)
+- Velazquez Sanchez Jose Emiliano (participante)
+- Rivera Ibarra Juan Luis (participante)
 
 
 ## Objetivo
