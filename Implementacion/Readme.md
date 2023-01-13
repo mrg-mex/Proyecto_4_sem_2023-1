@@ -1,8 +1,8 @@
 # Implementacion
 
-###Armado del Robot
+### Armado del Robot
 
-####Material Faltante
+#### Material Faltante
 
 * Separador roscado hembra hexagonal de 6mm M3 18mm largo
 
