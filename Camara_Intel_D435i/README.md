@@ -11,6 +11,9 @@ Esto se realiza con la finalidad de evitar problemas en la demanda de la memoria
 
 Para su instalación será necesario abrir la terminal y copiar el respositorio de JetsonHacksNano (Autor del cual nos apoyamos para la instalación) llamado installSwapfile colocando la siguiente instrucción: 
 
+  git clone LINK
+ 
+ 
 
 
 ## Instalación del Visor Realsense
