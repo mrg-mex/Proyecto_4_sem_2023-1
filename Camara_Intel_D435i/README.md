@@ -13,9 +13,9 @@ Para su instalación será necesario abrir la terminal y copiar el respositorio 
 
 
 
-##Instalación del Visor Realsense
+## Instalación del Visor Realsense
 
-hj
+
 
 
 
