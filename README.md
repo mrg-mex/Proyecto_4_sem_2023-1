@@ -65,5 +65,7 @@ Existen diversas aplicaciones que puede realizar el robot, sin embargo, es de vi
 ## Referencias
 
 <a id="1">[1]</a>  "NVIDIA Isaac SDK". NVIDIA Developer. Available https://developer.nvidia.com/isaac-sdk (accedido el 17 de enero de 2023).
+
 <a id="2">[2]</a>   SA. "Sistemas holonómicos". Electric Bricks. Available http://blog.electricbricks.com/2010/07/sistemas-holonomicos/ (accedido el 17 de enero de 2023).
+
 <a id="3">[3]</a>   "NVIDIA Kaya — ISAAC 2021.1 documentation". NVIDIA Documentation Center | NVIDIA Developer. Available https://docs.nvidia.com/isaac/doc/tutorials/assemble_kaya.html (accedido el 17 de enero de 2023).
