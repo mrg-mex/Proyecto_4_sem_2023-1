@@ -51,6 +51,8 @@ Existen diversas aplicaciones que puede realizar el robot, sin embargo, es de vi
 
 **Simplificación de polígonos sobre el CAD del ensamble**
 
+## Conclusiones
+
 ## Autores
 
 
