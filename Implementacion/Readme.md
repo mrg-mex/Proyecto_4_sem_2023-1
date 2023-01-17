@@ -52,7 +52,35 @@ Para ver el error se puede consultar:
 
 - [unable-to-install-bazel-on-ubuntu](https://stackoverflow.com/questions/45767275/unable-to-install-bazel-on-ubuntu-14-04-using-apt-get)
 
+### Wizard 2.0 
 
+DYNAMIXEL Wizard 2.0 es una herramienta optimizada para administrar DYNAMIXEL desde varios sistemas operativos. Las siguientes características se proporcionan con DYNAMIXEL Wizard 2.0.
+
+* Actualización de firmware de DINAMIXEL
+* Diagnóstico de DINAMIXEL
+* Configuración y prueba de DINAMIXEL
+* DYNAMIXEL Data Plotting en tiempo real
+* Genere y monitoree paquetes DYNAMIXEL
+
+Su documentación y la forma de instalar esta herramienta se puede consultar en la siguiente liga:
+
+- [dynamixel/wizard2](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/)
+
+El programa que nos insteresa para poner a prueba los motores esta en la siguiente ubicación:
+
+	/home/kaya/isaac-sdk-20210609-e336b5195/sdk/packages/dynamixel/apps
+
+El nombre del programa es: "dynamixel_test.app.json"
+
+Este programa da las bases para el control de los servos dinamixel. Sin embargo según la página de su documentación:
+
+- [emanual_dinamixel](https://github.com/ROBOTIS-GIT/emanual/blob/master/docs/en/software/dynamixel/dynamixel_sdk/device_setup.md)
+
+El servo AX-18A no tiene pruebas realizadas con ninguno de los dos protocolos existentes, por lo que los porgramas se tendrán que escribir sin ayuda de esta biblioteca.
+
+- [Documentacion_AX-18A](https://emanual.robotis.com/docs/en/dxl/ax/ax-18a/)
+
+En la liga anterior se puede encontrar información útil como la tabla de control de las direcciones de memoria (necesarias para activar el motor), especificaciones, los diferentes Baud Rate disponibles para este modelo, el toque máximo, etc.
 
 ### Recomendaciones
 
