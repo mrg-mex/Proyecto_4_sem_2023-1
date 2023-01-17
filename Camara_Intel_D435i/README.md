@@ -13,7 +13,7 @@ Para su instalación será necesario abrir la terminal y copiar el respositorio 
 
   git clone LINK
  
- 
+ g
 
 
 ## Instalación del Visor Realsense
