@@ -1,15 +1,15 @@
 # Proyecto_4_sem_2023-1
 # Armado e implementación de un robot móvil Nvidia Kaya
 
-### Participantes
-- Erik Peña Medina (Responsable)
-- Yeshua González Jiménez (participante)
-- Leslie Dayana Bolaños Viquez (participante)
-- Eduardo Vega Solorzano (participante)
-- Kevin de la Rosa Romero (participante)
-- Velazquez Sanchez Jose Emiliano (participante)
-- Rivera Ibarra Juan Luis (participante)
+## Contenido
 
+- [Objetivo](#objetivo)
+- [Metas](#metas)
+- [Productos](#productos)
+- [Introducción](#introduccion)
+- [Desarrollo](#desarrollo)
+- [Autores](#autores)
+- [Referencias](#referencias)
 
 ## Objetivo
 Implementar un robot Nvidia Kaya para la implementación de algoritmos de esquemas de navegación autónoma en un espacio determinado.
@@ -26,15 +26,25 @@ Implementar un robot Nvidia Kaya para la implementación de algoritmos de esquem
 - Repositorio con archivos de prueba del robot.
 - Simulación del robot navegando en un ambiente determinado.*
 
-## Autor
+
+## Introducción
+
+
+## Desarrollo
+
+
+## Autores
 
 
 | Iniciales  | Description |
 | ----------:| ----------- |
 | **EPM**  | Erik Peña Medina [GitHub profile](https://github.com/ErikFiUNAM) |
-| **YGJ**  | Yeshua González Jiménez [GitHub profile](pendiente) |
-| **LDBV**  | Leslie Dayana Bolaños Viquez [GitHub profile](pendiente) |
-| **EVS**  | Eduardo Vega Solorzano [GitHub profile](pendiente) |
-| **KDR**  | Kevin De la Rosa Romero [GitHub profile](pendiente) |
+| **YGJ**  | Yeshua González Jiménez [GitHub profile](https://github.com/YeshuaGonzalez) |
+| **LDBV**  | Leslie Dayana Bolaños Viquez [GitHub profile](https://github.com/lessliebv04) |
+| **EVS**  | Eduardo Vega Solorzano [GitHub profile](https://github.com/eduVega1) |
+| **KDR**  | Kevin De la Rosa Romero [GitHub profile](https://github.com/KevinDLRR) |
 | **VSJE**  | Velazquez Sanchez Jose Emiliano [GitHub profile](pendiente) |
 | **RIJL**  | Rivera Ibarra Juan Luis [GitHub profile](pendiente) |
+
+
+## Referencias
