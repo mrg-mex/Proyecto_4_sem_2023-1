@@ -47,6 +47,9 @@ Existen diversas aplicaciones que puede realizar el robot, sin embargo, es de vi
 
 ## Desarrollo
 
+**Instalación del visor RealSense**
+
+**Simplificación de polígonos sobre el CAD del ensamble**
 
 ## Autores
 
