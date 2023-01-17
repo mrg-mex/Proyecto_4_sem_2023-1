@@ -36,11 +36,11 @@ Implementar un robot Nvidia Kaya para la implementación de algoritmos de esquem
 ## Introducción
 
 Dentro de la automatización inteligente se ha observado que los robots se han vuelto cada vez más omnipresentes en la vida diaria desde su fabricación hasta su uso comercial e industrial. Sin embargo, su desarrollo se torna complejo, lento, desafiante y costoso debido a los entornos y escenarios no estructurados en casos de uso.
-Por esta razón, la empresa NVIDIA se ha especializado en el desarrollo de unidades de procesamiento gráfico y tecnologías de circuitos integrados para estaciones de trabajo como lo es el robot móvil “Kaya”, el cual se ejecuta en la plataforma NVIDIA Jetson NANO para implementar sistemas de inteligencia artificial.[[1]](#1)
+Por esta razón, la empresa NVIDIA se ha especializado en el desarrollo de unidades de procesamiento gráfico y tecnologías de circuitos integrados para estaciones de trabajo como lo es el robot móvil “Kaya”, el cual se ejecuta en la plataforma NVIDIA Jetson NANO para implementar sistemas de inteligencia artificial [[1]](#1).
 
 Entonces se puede decir que es un robot de código abierto, el cual es impulsado por una serie de aplicaciones empaquetadas con el SDK de Isaac y ejecutadas mediante la Jetson Nano para proporcionar un punto de partida accesible para el desarrollo de la robótica. Lo curioso de dicho robot es que se diseñó por medio de piezas impresas en 3D y componentes “básicos” con la finalidad de hacer un robot más accesible.
 
-Kaya es un robot de tipo holonómico, es decir, es capaz de modificar su dirección de forma instantánea y sin la necesidad de rotar previamente gracias a que posee una unidad de tres ruedas[[2]](#2). Además, con ayuda de su cámara de profundidad RealSense le permite recibir información del entorno en el cual lo rodea con el fin de mapear, localizar y reconocer objetos. Aunado a lo anterior, la disposición de una IMU y de los motores de las ruedas permiten estimar la posición a través de la rotación de las ruedas a lo largo del tiempo. 
+Kaya es un robot de tipo holonómico, es decir, es capaz de modificar su dirección de forma instantánea y sin la necesidad de rotar previamente gracias a que posee una unidad de tres ruedas [[2]](#2). Además, con ayuda de su cámara de profundidad RealSense le permite recibir información del entorno en el cual lo rodea con el fin de mapear, localizar y reconocer objetos. Aunado a lo anterior, la disposición de una IMU y de los motores de las ruedas permiten estimar la posición a través de la rotación de las ruedas a lo largo del tiempo [[3]](#3).
 
 Existen diversas aplicaciones que puede realizar el robot, sin embargo, es de vital importancia conocer la manera en la cual se implementan las herramientas necesarias para su funcionamiento desde su cámara RealSense hasta el CAD requerido para simularlo en algún entorno de programación como lo es MATLAB. Por ello, el presente repositorio abordará dichas implementaciones para poner en funcionamiento al robot Kaya.
 
@@ -52,7 +52,7 @@ Existen diversas aplicaciones que puede realizar el robot, sin embargo, es de vi
 **Simplificación de polígonos sobre el CAD del ensamble**
 
 Para este punto es necesario disminuir considerablemente los polígonos con la finalidad de ahorrar recursos gráficos y de memoria a la hora de implementar el CAD en diferentes softwares de simulación que permitan analizar el comportamiento del robot móvil. La simplificación se llevó a cabo mediante los siguientes pasos:
-1.  El CAD completo se encuentra en OnShape [3], en el cual se descargaron únicamente las partes significativas del ensamble en formato “STEP”. Esto último es       esencial, pues las piezas se modificaron en SolidWorks para posteriormente realizar el urdf.
+1.  El CAD completo se encuentra en OnShape [[4]](#4), en el cual se descargaron únicamente las partes significativas del ensamble en formato “STEP”. Esto último es       esencial, pues las piezas se modificaron en SolidWorks para posteriormente realizar el urdf.
 
       Figura 1. CAD completo de la página OnShape.
 ![KayaOnShape](https://github.com/mrg-mex/Proyecto_4_sem_2023-1/blob/main/Imagenes_Videos/KayaOnShape.png)                                                        
@@ -121,12 +121,23 @@ Cabe mencionar que a lo largo del proyecto se estuvieron haciendo diversas prueb
 
 Figura 11. Archivos de los ensambles finales del CAD.
 
-El siguiente paso para realizar es generar un archivo URDF, el cual permitirá describirlo mediante su modelo cinemático y dinámico del robot necesario para su simulación dinámica y control. Es fundamental considerar que no permite describir robots que no sigan una estructura tipo árbol y sus elementos no sean rígidos. [referencia]
+Finalmente, se abrirán las piezas en SOLIDWORKS como se ve a continuación:
+
+![CarcasaSolid](https://github.com/mrg-mex/Proyecto_4_sem_2023-1/blob/main/Imagenes_Videos/CarcasaSolid2.png)
+
+Figura 12. Carcasa en SOLIDWORKS.
+
+![RuedasSolid](https://github.com/mrg-mex/Proyecto_4_sem_2023-1/blob/main/Imagenes_Videos/RuedasSolid2.png)
+
+Figura 13. Ruedas en SOLIDWORKS.
+
+
+El siguiente paso para realizar es generar un archivo URDF, el cual permitirá describirlo mediante su modelo cinemático y dinámico del robot necesario para su simulación dinámica y control. Es fundamental considerar que no permite describir robots que no sigan una estructura tipo árbol y sus elementos no sean rígidos [[5]](#5).
 Por lo anterior, se adjunta un video para generar dicho archivo con el CAD generado en la presente documentación.
 
 [![Diseño de herramientas computacionales para la robótica](https://github.com/mrg-mex/Proyecto_4_sem_2023-1/blob/main/Imagenes_Videos/URDF.png)](https://www.youtube.com/watch?v=CKlK5H8EguA&t=2423s)
 
-Figura 12. Enlace para URDF.
+Figura 14. Enlace para URDF.
 
 ## Conclusiones
 
@@ -150,3 +161,7 @@ Figura 12. Enlace para URDF.
 <a id="2">[2]</a>   SA. "Sistemas holonómicos". Electric Bricks. Available http://blog.electricbricks.com/2010/07/sistemas-holonomicos/ (accedido el 17 de enero de 2023).
 
 <a id="3">[3]</a>   "NVIDIA Kaya — ISAAC 2021.1 documentation". NVIDIA Documentation Center | NVIDIA Developer. Available https://docs.nvidia.com/isaac/doc/tutorials/assemble_kaya.html (accedido el 17 de enero de 2023).
+
+<a id="4">[4]</a>   "Onshape". NVIDIA Kaya Robot. Available https://cad.onshape.com/documents/03aa2560e7a40b2b7da40e12/w/001dbb6db63b0092c9ea5823/e/37043abce9062fab02c40889 (accedido el 17 de enero de 2023).
+
+<a id="5">[5]</a>   R. Martín Batanero y J. Pomares Baeza. "ROS para la simulación de exoesquleto". RUA: Principal. Available https://rua.ua.es/dspace/bitstream/10045/116947/1/Ros_para_la_simulacion_y_control_de_exoesqueletos_Martin_Batanero_Raul.pdf (accedido el 17 de enero de 2023).
