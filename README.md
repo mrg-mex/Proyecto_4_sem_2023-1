@@ -1,6 +1,12 @@
 # Proyecto_4_sem_2023-1
 # Armado e implementación de un robot móvil Nvidia Kaya
 
+| Código | Description |
+| ------:| ----------- |
+| ***Asignatura*** | Robótica *2135* | 
+| **Robotica-2023-I**  | Proyecto Nvidia Kaya |
+| **IT102321-C002** | Sistema Ciber-Físico - Proyecto - Módulo  |
+
 ## Contenido
 
 - [Objetivo](#objetivo)
