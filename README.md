@@ -12,7 +12,7 @@
 - [Objetivo](#objetivo)
 - [Metas](#metas)
 - [Productos](#productos)
-- [Introducción](#introduccion)
+- [Introducción](#introducción)
 - [Desarrollo](#desarrollo)
 - [Autores](#autores)
 - [Referencias](#referencias)
@@ -51,10 +51,41 @@ Existen diversas aplicaciones que puede realizar el robot, sin embargo, es de vi
 
 **Simplificación de polígonos sobre el CAD del ensamble**
 
+Para este punto es necesario disminuir considerablemente los polígonos con la finalidad de ahorrar recursos gráficos y de memoria a la hora de implementar el CAD en diferentes softwares de simulación que permitan analizar el comportamiento del robot móvil. La simplificación se llevó a cabo mediante los siguientes pasos:
+1.  El CAD completo se encuentra en OnShape [3], en el cual se descargaron únicamente las partes significativas del ensamble en formato “STEP”. Esto último es       esencial, pues las piezas se modificaron en SolidWorks para posteriormente realizar el urdf.
+      Imagen
+      
+2.  En total se descargaron 4 piezas de subensamble, las cuales se debían modificar para lograr la disminución de polígonos. A la figura 1 se le retiró la plataforma de recogedor, tal y como se muestra en la figura 2.
+
+3. La figura 3 contenía la parte electrónica del robot, esto es: 
+- Kit de desarrollo NVIDIA Jetson Nano
+- Placa IMU Bosch
+- Concentrador de potencia de 6 puertos
+- Batería de iones de litio
+- Regulador reductor de CC-CC de 5V 
+- Interruptor
+
+    Por lo que modificar esta pieza fue fundamental a la hora de reducir polígonos.
+    Cabe destacar que el regulador reductor de CC-CC de 12 V no se logró quitar del subensamble, debido a una restricción que venía desde la página OnShape, sin         embargo, la pieza no contenía polígonos considerables.
+
+4. Con relación a la figura 5, solo se retiraron las antenas Wi-Fi de doble banda
+
+5. Finalmente, el subensamble de las ruedas contenía la base del servomotor MX-12W unida a las llantas, por lo cual se tuvieron que separar con la finalidad de elaborar 2 archivos diferentes, los cuales permitieran generar movilidad en el entorno de simulación.
+
+6. Al finalizar la modificación de las diferentes piezas, se procedió a ensamblar de tal forma que la “carcasa” y las “llantas” resultarán en dos ensambles diferentes listos para los archivos de simulación.
+
+
+Cuando se obtuvieron las piezas deseadas se empleó el software Blender únicamente para corroborar la disminución de los polígonos trabajados. De esta manera, se realizó una comparativa del ensamble original al ensamble modificado, en el cual se observó una reducción de aproximadamente el 83% respecto al ensamble original, tal como lo muestran la figura 5 y 6.
+Cabe mencionar que a lo largo del proyecto se estuvieron haciendo diversas pruebas para eliminar la mayor cantidad de polígonos presentes, por lo cual el presente repositorio tiene 2 carpetas de CAD. Sin embargo, las piezas finales y las descritas anteriormente se subieron como un Branch titulado “CAD-Simplificado-SOLIDWORKS” en la carpeta de “CAD-Simplificado” con el nombre de [`Kaya_STEP`](https://github.com/mrg-mex/Proyecto_4_sem_2023-1/tree/CAD-Simplificado-SOLIDWORKS/CAD_simplificado/Kaya_STEP).
+
+El siguiente paso para realizar es generar un archivo URDF, el cual permitirá describirlo mediante su modelo cinemático y dinámico del robot necesario para su simulación dinámica y control.
+Unified Robot Description Format (URDF) se trata de un archivo XML que permite describir un robot. La descripción del robot consiste en eslabones o links rígidos conectados por medio de las articulaciones o joints. El modelo URDF permite representar un modelo cinemático y dinámico del robot necesario para su simulación dinámica y para su control. Es fundamental considerar que no permite describir robots que no sigan una estructura tipo árbol y sus elementos no sean rígidos. [referencia]
+Por lo anterior, se adjunta un video para generar dicho archivo con el CAD generado en la presente documentación. https://www.youtube.com/watch?v=CKlK5H8EguA&t=2423s
+
+
 ## Conclusiones
 
 ## Autores
-
 
 | Iniciales  | Description |
 | ----------:| ----------- |
