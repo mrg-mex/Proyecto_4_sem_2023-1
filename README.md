@@ -26,3 +26,15 @@ Implementar un robot Nvidia Kaya para la implementación de algoritmos de esquem
 - Repositorio con archivos de prueba del robot.
 - Simulación del robot navegando en un ambiente determinado.*
 
+## Autor
+
+
+| Iniciales  | Description |
+| ----------:| ----------- |
+| **EPM**  | Erik Peña Medina [GitHub profile](https://github.com/ErikFiUNAM) |
+| **YGJ**  | Yeshua González Jiménez [GitHub profile](pendiente) |
+| **LDBV**  | Leslie Dayana Bolaños Viquez [GitHub profile](pendiente) |
+| **EVS**  | Eduardo Vega Solorzano [GitHub profile](pendiente) |
+| **KDR**  | Kevin De la Rosa Romero [GitHub profile](pendiente) |
+| **VSJE**  | Velazquez Sanchez Jose Emiliano [GitHub profile](pendiente) |
+| **RIJL**  | Rivera Ibarra Juan Luis [GitHub profile](pendiente) |
