@@ -13,6 +13,20 @@ Para su instalación será necesario abrir la terminal y copiar el respositorio 
 
      $ git clone https://github.com/JetsonHacksNano/installSwapfile.git
 
+Posteriormente tenemos que ejecutar las siguientes instrucciones: 
+
+     $ cd installSwapfile/
+     $ ./installSwapfile.sh
+
+NOTA: Para esta instalación ocurría un problema similar al siguiente:
+
+     Error: fallocate: fallocate failed: Text file busy.
+     
+Para su solución fue necesario emplear el siguiente comando: 
+
+     sudo swapoff -a
+
+Y posteriormente volver a colocar el comando $ ./installSwapfile.sh, así se solucionó este problema. 
 
 ## Instalación del Visor Realsense
 
