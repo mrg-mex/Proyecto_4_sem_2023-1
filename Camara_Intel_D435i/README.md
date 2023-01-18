@@ -54,6 +54,7 @@ Una ves dentro de esta ubicación colocamos la siguiente instrucción:
 
 La aplicación procedera a ejecutarse y verémos la siguiente interfaz:
 
+![image](https://user-images.githubusercontent.com/107418635/213064186-c411e289-11bf-4f63-88c1-1079c2f7ea69.png)
 
 
 
