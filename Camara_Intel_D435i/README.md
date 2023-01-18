@@ -30,6 +30,30 @@ Y posteriormente volver a colocar el comando $ ./installSwapfile.sh, así se sol
 
 ## Instalación del Visor Realsense
 
+Para esta instalación será necesario copiar de nuevo otro repositorio del mismo autor, el cual es installLibrealsense (Link: https://github.com/JetsonHacksNano/installLibrealsense), es un procedimiento bastante similar a lo anterior. Para eso colocaremos la sieuinte instrucción: 
+
+     $ git clone https://github.com/JetsonHacksNano/installLibrealsense.git
+     
+Para posteriormente ejecutar la siguiente línea de código: 
+
+     $ cd installLibrealsense/ 
+
+En mi caso el comando para la instalación $ ./installLibrealsense.sh no se completó con éxito, lo cuál me detuvo totalmente en la instalación de la aplicación para poder visualizar las imagenes por parte de la cámara. Sin embargo una alternativa que funcionó con éxito fue el sigiuente comando: 
+
+     $ ./buildLibrealsense.sh
+    
+Lo cual automáticamente instalaría este visor junto con todos su módulos y complementos. Esto tardó aproximadamente 1 hora. Cuando finalice la instalación será necesario reiniciar la placa para que todo funcione exitosamente. Para eso no es necesario utilizar la terminal, basta con ir al último icono de la parte superior derecha, colocar Shut Down y posteriormente "Reiniciar". 
+
+Finalmente para poder ejecutar la aplicación se coloca la siguiente instrucción: 
+
+     $ cd /usr/local/bin
+     
+Una ves dentro de esta ubicación colocamos la siguiente instrucción: 
+
+     $ ./realsense-viewer/
+
+La aplicación procedera a ejecutarse y verémos la siguiente interfaz:
+
 
 
 
