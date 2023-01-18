@@ -64,4 +64,16 @@ Del lado izquiero vemos la opción "RGB Camera", la resolución la cambiaremos a
 
 Finalmente para activar la visualización tenemos que colocar "ON" en "RGB Camera", de la siguiente manera: 
 
-<center>![image](https://user-images.githubusercontent.com/107418635/213066216-3c4f71db-dbec-4089-a982-0e8791749b6c.png)</center>
+![image](https://user-images.githubusercontent.com/107418635/213066216-3c4f71db-dbec-4089-a982-0e8791749b6c.png)
+
+INSERTAR IMAGEN DE VISTA NORMAL 
+
+Es así como logramos tener las primeras imagenes con esta cámara. 
+
+Para poder explotar los recursos que nos brinda esta cámara y ver algunas otras herramientas de distancia procedemos a desplegar la opción que dice "Stereo Module" y habilitar "Infrared 1" e "Infrared 2", posteriormente damos "ON" teniendo lo siguiente: 
+
+![image](https://user-images.githubusercontent.com/107418635/213069382-729c123a-1868-4ce4-8b9e-2e8bbee3f42c.png)
+
+Con esto podemos observar que nuestra pantalla principal se divide en 4 y tenemos las siguientes vistas con lo que se puede proceder a hacer las pruebas necesarias en ROS.
+
+INSERTAR IMAGEN DE LAS 4 PANTALLAS DISPONIBLES
