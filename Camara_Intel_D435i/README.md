@@ -9,15 +9,12 @@ Al término de esta instalación será posible comenzar a hacer pruebas en ROS.
 
 Esto se realiza con la finalidad de evitar problemas en la demanda de la memoria en la Jetson Nano al momento de ejecutar el script de interés. 
 
-Para su instalación será necesario abrir la terminal y copiar el respositorio de JetsonHacksNano (Autor del cual nos apoyamos para la instalación) llamado installSwapfile colocando la siguiente instrucción: 
+Para su instalación será necesario abrir la terminal y copiar el respositorio de JetsonHacksNano (Autor del cual nos apoyamos para la instalación) llamado installSwapfile (Link: https://github.com/JetsonHacksNano/installSwapfile) y colocamos la siguiente instrucción: 
 
-  git clone LINK
- 
- g
+     $ git clone https://github.com/JetsonHacksNano/installSwapfile.git
 
 
 ## Instalación del Visor Realsense
-
 
 
 
