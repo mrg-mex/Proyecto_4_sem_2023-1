@@ -51,10 +51,17 @@ Finalmente para poder ejecutar la aplicación se coloca la siguiente instrucció
 Una ves dentro de esta ubicación colocamos la siguiente instrucción: 
 
      $ ./realsense-viewer/
-
+     
 La aplicación procedera a ejecutarse y verémos la siguiente interfaz:
 
 ![image](https://user-images.githubusercontent.com/107418635/213064186-c411e289-11bf-4f63-88c1-1079c2f7ea69.png)
 
+Para esto tenemos que tener conectada la cámara mediante algún puerto USB y automáticamente se reconocerá este dispositivo.
 
+Del lado izquiero vemos la opción "RGB Camera", la resolución la cambiaremos a 1920 x 1080 y en "Avaiable Strams" en la opción "Color" seleccionaremos YUYV. Esto se ve de la siguiente manera: 
 
+![image](https://user-images.githubusercontent.com/107418635/213065376-0fa27b32-63ff-416d-861b-115b92f15f29.png)
+
+Finalmente para activar la visualización tenemos que colocar "ON" en "RGB Camera", de la siguiente manera: 
+
+![image](https://user-images.githubusercontent.com/107418635/213066216-3c4f71db-dbec-4089-a982-0e8791749b6c.png)
