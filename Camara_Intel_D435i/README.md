@@ -64,4 +64,4 @@ Del lado izquiero vemos la opción "RGB Camera", la resolución la cambiaremos a
 
 Finalmente para activar la visualización tenemos que colocar "ON" en "RGB Camera", de la siguiente manera: 
 
-     ![image](https://user-images.githubusercontent.com/107418635/213066216-3c4f71db-dbec-4089-a982-0e8791749b6c.png)
+<center>![image](https://user-images.githubusercontent.com/107418635/213066216-3c4f71db-dbec-4089-a982-0e8791749b6c.png)</center>
