@@ -76,4 +76,4 @@ Para poder explotar los recursos que nos brinda esta cámara y ver algunas otras
 
 Con esto podemos observar que nuestra pantalla principal se divide en 4 y tenemos las siguientes vistas con lo que se puede proceder a hacer las pruebas necesarias en ROS.
 
-INSERTAR IMAGEN DE LAS 4 PANTALLAS DISPONIBLES
+![image](https://user-images.githubusercontent.com/107418635/213070317-35b30a5d-b68a-454c-a1a8-dcf1b2c09567.png)
