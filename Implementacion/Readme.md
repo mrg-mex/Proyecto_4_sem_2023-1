@@ -86,7 +86,8 @@ El servo AX-18A no tiene pruebas realizadas con ninguno de los dos protocolos ex
 
 En la liga anterior se puede encontrar información útil como la tabla de control de las direcciones de memoria (necesarias para activar el motor), especificaciones, los diferentes Baud Rate disponibles para este modelo, el toque máximo, etc.
 
-**Información importante :** Se intentó instalar DynamixelSDK para probar cada servomotor AX-18A desde: Python, Matlab (Linux), Rapberry Pi, siguiendo los pasos dados por el canal de Youtube "ROBOTIS", sin ningún exito.
+**Información importante :** Se intentó instalar DynamixelSDK para probar cada servomotor AX-18A desde: Python, Matlab (Linux), Rapberry Pi, siguiendo los pasos dados por el canal de Youtube "ROBOTIS", sin ningún exito, por lo comentado anteriormente, sobre que no existe pruebas realizadas con el servo AX-18A.
+
 - [Canal de Youtube ROBOTIS](https://www.youtube.com/@ROBOTISCHANNEL)
 
 ### Recomendaciones
