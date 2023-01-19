@@ -85,3 +85,7 @@ Con esto podemos observar que nuestra pantalla principal se divide en 4 y tenemo
 ![image](https://user-images.githubusercontent.com/107418635/213070317-35b30a5d-b68a-454c-a1a8-dcf1b2c09567.png)
 Figura 6. Vistas en tiempo real con las cámaras de profundidad
 
+##Conclusiones:
+
+Se pudo conluir exitosamente la instalación del visor realsense con el que se podrán hacer ensayos y pruebas con ROS para posteriormente generar el reconocimiento de trayectoria, objetos u otros elementos. Durante esta instalación se tuvieron problemas que no estaban documentados de acuerdo a las guías de JetsonHacksNano (Autor guía de la instalación) y por eso fue necesario emplear métodos ligeramente distintos de instalación que sirven como una alternativa en caso de que se encuentre el mismo problema en situaciones similares.
+
