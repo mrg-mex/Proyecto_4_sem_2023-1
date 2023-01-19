@@ -6,23 +6,23 @@
 
 * Separador roscado hembra hexagonal de 6mm M3 18mm largo
 
-### Instalación del sistema operativo
+### InstalaciÃ³n del sistema operativo
 
-Para el sistema embebido Jetson nano de Nvidia, es necesario usar una imagen para el sistema operativo diseñada específicamente para esta plataforma. Se usa un sistema operativo Ubuntu en su versión 18.03, esta imagen se puede encontrar en la documentación de Nvidia en la siguiente página :
+Para el sistema embebido Jetson nano de Nvidia, es necesario usar una imagen para el sistema operativo diseï¿½ada especï¿½ficamente para esta plataforma. Se usa un sistema operativo Ubuntu en su versiï¿½n 18.03, esta imagen se puede encontrar en la documentaciï¿½n de Nvidia en la siguiente pï¿½gina :
 
 - [get-start-jetson-nano-devkit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
 
-se debe seleccionar las instrucciones para el sistema operativo que estés usando para instalarlo.
+se debe seleccionar las instrucciones para el sistema operativo que estï¿½s usando para instalarlo.
 
-Para instalarlo en este proyecto se usó el programa Rufus con una memoria microSD de 64BG y adaptador a USB, es importante recalcar que lo que esté escrito en la microSD se borrará al instalar el sistema operativo.
+Para instalarlo en este proyecto se usï¿½ el programa Rufus con una memoria microSD de 64BG y adaptador a USB, es importante recalcar que lo que estï¿½ escrito en la microSD se borrarï¿½ al instalar el sistema operativo.
 
 ### Isaack SDK
 
-El NVIDIA Isaac SDK es un kit de herramientas que incluye bloques de construcción y herramientas que aceleran los desarrollos de robots que requieren una mayor percepción y características de navegación habilitadas por la IA
+El NVIDIA Isaac SDK es un kit de herramientas que incluye bloques de construcciï¿½n y herramientas que aceleran los desarrollos de robots que requieren una mayor percepciï¿½n y caracterï¿½sticas de navegaciï¿½n habilitadas por la IA
 
-1.- Descargar Isaac SDK de la página de nvidia
+1.- Descargar Isaac SDK de la pï¿½gina de nvidia
 * Se tiene que crear una cuenta
-* Se tiene que registrar en el proyecto, sin el registro no se dará acceso a la imagen
+* Se tiene que registrar en el proyecto, sin el registro no se darï¿½ acceso a la imagen
 
 2.- Descomprimir el archivo SDK en home
 
@@ -35,13 +35,13 @@ El NVIDIA Isaac SDK es un kit de herramientas que incluye bloques de construcció
 	./engine/build/scripts/install_dependencies.sh
 	gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 
-5.- Nvidia GPU Driver: En esta parte se marca un error ya que no se encuentra la versión que se requiere
+5.- Nvidia GPU Driver: En esta parte se marca un error ya que no se encuentra la versiï¿½n que se requiere
 
 	sudo add-get-repository ppa:graphics-drivers/ppa
 	sudo apt-get update
 	sudo apt-get install nvidia-driver-440 (aqui nos quedamos)
 
-6.- Instalación de Bazel. Esta librería es necesaria para ejecutar programas, pero se tienen errores de instalación porque la librería ya no se encuentra en el repositorio, por lo que hay que optar por los archivos binarios de nuevo.
+6.- Instalaciï¿½n de Bazel. Esta librerï¿½a es necesaria para ejecutar programas, pero se tienen errores de instalaciï¿½n porque la librerï¿½a ya no se encuentra en el repositorio, por lo que hay que optar por los archivos binarios de nuevo.
 
 	sudo apt install apt-transport-https curl gnupg
 	curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg
@@ -54,37 +54,37 @@ Para ver el error se puede consultar:
 
 ### Wizard 2.0 
 
-DYNAMIXEL Wizard 2.0 es una herramienta optimizada para administrar DYNAMIXEL desde varios sistemas operativos. Las siguientes características se proporcionan con DYNAMIXEL Wizard 2.0.
+DYNAMIXEL Wizard 2.0 es una herramienta optimizada para administrar DYNAMIXEL desde varios sistemas operativos. Las siguientes caracterï¿½sticas se proporcionan con DYNAMIXEL Wizard 2.0.
 
-* Actualización de firmware de DINAMIXEL
-* Diagnóstico de DINAMIXEL
-* Configuración y prueba de DINAMIXEL
+* Actualizaciï¿½n de firmware de DINAMIXEL
+* Diagnï¿½stico de DINAMIXEL
+* Configuraciï¿½n y prueba de DINAMIXEL
 * DYNAMIXEL Data Plotting en tiempo real
 * Genere y monitoree paquetes DYNAMIXEL
 
-Su documentación y la forma de instalar esta herramienta se puede consultar en la siguiente liga:
+Su documentaciï¿½n y la forma de instalar esta herramienta se puede consultar en la siguiente liga:
 
 - [dynamixel/wizard2](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/)
 
-El programa que nos insteresa para poner a prueba los motores esta en la siguiente ubicación:
+El programa que nos insteresa para poner a prueba los motores esta en la siguiente ubicaciï¿½n:
 
 	/home/kaya/isaac-sdk-20210609-e336b5195/sdk/packages/dynamixel/apps
 
 El nombre del programa es: "dynamixel_test.app.json"
 
-Este programa da las bases para el control de los servos dinamixel. Sin embargo según la página de su documentación:
+Este programa da las bases para el control de los servos dinamixel. Sin embargo segï¿½n la pï¿½gina de su documentaciï¿½n:
 
 - [emanual_dinamixel](https://github.com/ROBOTIS-GIT/emanual/blob/master/docs/en/software/dynamixel/dynamixel_sdk/device_setup.md)
 
-El servo AX-18A no tiene pruebas realizadas con ninguno de los dos protocolos existentes, por lo que los porgramas se tendrán que escribir sin ayuda de esta biblioteca.
+El servo AX-18A no tiene pruebas realizadas con ninguno de los dos protocolos existentes, por lo que los porgramas se tendrï¿½n que escribir sin ayuda de esta biblioteca.
 
 - [Documentacion_AX-18A](https://emanual.robotis.com/docs/en/dxl/ax/ax-18a/)
 
-En la liga anterior se puede encontrar información útil como la tabla de control de las direcciones de memoria (necesarias para activar el motor), especificaciones, los diferentes Baud Rate disponibles para este modelo, el toque máximo, etc.
+En la liga anterior se puede encontrar informaciï¿½n ï¿½til como la tabla de control de las direcciones de memoria (necesarias para activar el motor), especificaciones, los diferentes Baud Rate disponibles para este modelo, el toque mï¿½ximo, etc.
 
 ### Recomendaciones
 
-Para encender la jetson nano asegure de tener la microSD en su respectiva ranura, y si se alimenta la tarjeta a través del Jack y eliminador el jumper J48 se debe tener puesto, si la alimenta es a través del puerto microusb entonces no deberá tener el jumper puesto.
+Para encender la jetson nano asegure de tener la microSD en su respectiva ranura, y si se alimenta la tarjeta a travï¿½s del Jack y eliminador el jumper J48 se debe tener puesto, si la alimenta es a travï¿½s del puerto microusb entonces no deberï¿½ tener el jumper puesto.
 
 
 
