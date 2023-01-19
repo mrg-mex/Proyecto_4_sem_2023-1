@@ -2,27 +2,29 @@
 
 ### Armado del Robot
 
+![Imagen Kaya](https://docs.nvidia.com/isaac/_images/kaya_robot.jpg)
+
 #### Material Faltante
 
 * Separador roscado hembra hexagonal de 6mm M3 18mm largo
 
 ### Instalación del sistema operativo
 
-Para el sistema embebido Jetson nano de Nvidia, es necesario usar una imagen para el sistema operativo dise�ada espec�ficamente para esta plataforma. Se usa un sistema operativo Ubuntu en su versi�n 18.03, esta imagen se puede encontrar en la documentaci�n de Nvidia en la siguiente p�gina :
+Para el sistema embebido Jetson nano de Nvidia, es necesario usar una imagen para el sistema operativo diseñada específicamente para esta plataforma. Se usa un sistema operativo Ubuntu en su versión 18.03, esta imagen se puede encontrar en la documentación de Nvidia en la siguiente página :
 
 - [get-start-jetson-nano-devkit](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#write)
 
-se debe seleccionar las instrucciones para el sistema operativo que est�s usando para instalarlo.
+Se debe seleccionar las instrucciones para el sistema operativo que estes usando para instalarlo.
 
-Para instalarlo en este proyecto se us� el programa Rufus con una memoria microSD de 64BG y adaptador a USB, es importante recalcar que lo que est� escrito en la microSD se borrar� al instalar el sistema operativo.
+Para instalarlo en este proyecto se usó el programa Rufus con una memoria microSD de 64BG y adaptador a USB, es importante recalcar que lo que está escrito en la microSD se borrará al instalar el sistema operativo.
 
 ### Isaack SDK
 
-El NVIDIA Isaac SDK es un kit de herramientas que incluye bloques de construcci�n y herramientas que aceleran los desarrollos de robots que requieren una mayor percepci�n y caracter�sticas de navegaci�n habilitadas por la IA
+El NVIDIA Isaac SDK es un kit de herramientas que incluye bloques de construcción y herramientas que aceleran los desarrollos de robots que requieren una mayor percepción y características de navegación habilitadas por la IA
 
-1.- Descargar Isaac SDK de la p�gina de nvidia
+1.- Descargar Isaac SDK de la página de nvidia
 * Se tiene que crear una cuenta
-* Se tiene que registrar en el proyecto, sin el registro no se dar� acceso a la imagen
+* Se tiene que registrar en el proyecto, sin el registro no se dará acceso a la imagen
 
 2.- Descomprimir el archivo SDK en home
 
@@ -35,13 +37,13 @@ El NVIDIA Isaac SDK es un kit de herramientas que incluye bloques de construcci�
 	./engine/build/scripts/install_dependencies.sh
 	gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 
-5.- Nvidia GPU Driver: En esta parte se marca un error ya que no se encuentra la versi�n que se requiere
+5.- Nvidia GPU Driver: En esta parte se marca un error ya que no se encuentra la versión que se requiere
 
 	sudo add-get-repository ppa:graphics-drivers/ppa
 	sudo apt-get update
 	sudo apt-get install nvidia-driver-440 (aqui nos quedamos)
 
-6.- Instalaci�n de Bazel. Esta librer�a es necesaria para ejecutar programas, pero se tienen errores de instalaci�n porque la librer�a ya no se encuentra en el repositorio, por lo que hay que optar por los archivos binarios de nuevo.
+6.- Instalación de Bazel. Esta librería es necesaria para ejecutar programas, pero se tienen errores de instalación porque la librería ya no se encuentra en el repositorio, por lo que hay que optar por los archivos binarios de nuevo.
 
 	sudo apt install apt-transport-https curl gnupg
 	curl -fsSL https://bazel.build/bazel-release.pub.gpg | gpg --dearmor >bazel-archive-keyring.gpg
@@ -54,37 +56,44 @@ Para ver el error se puede consultar:
 
 ### Wizard 2.0 
 
-DYNAMIXEL Wizard 2.0 es una herramienta optimizada para administrar DYNAMIXEL desde varios sistemas operativos. Las siguientes caracter�sticas se proporcionan con DYNAMIXEL Wizard 2.0.
+DYNAMIXEL Wizard 2.0 es una herramienta optimizada para administrar DYNAMIXEL desde varios sistemas operativos. Las siguientes características se proporcionan con DYNAMIXEL Wizard 2.0.
 
-* Actualizaci�n de firmware de DINAMIXEL
-* Diagn�stico de DINAMIXEL
-* Configuraci�n y prueba de DINAMIXEL
+* Actualización de firmware de DINAMIXEL
+* Diagnóstico de DINAMIXEL
+* Configuración y prueba de DINAMIXEL
 * DYNAMIXEL Data Plotting en tiempo real
-* Genere y monitoree paquetes DYNAMIXEL
+* Genere y monitores paquetes DYNAMIXEL
 
-Su documentaci�n y la forma de instalar esta herramienta se puede consultar en la siguiente liga:
+Su documentación y la forma de instalar esta herramienta se puede consultar en la siguiente liga:
 
 - [dynamixel/wizard2](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/)
 
-El programa que nos insteresa para poner a prueba los motores esta en la siguiente ubicaci�n:
+El programa que nos insteresa para poner a prueba los motores esta en la siguiente ubicación:
 
 	/home/kaya/isaac-sdk-20210609-e336b5195/sdk/packages/dynamixel/apps
 
 El nombre del programa es: "dynamixel_test.app.json"
 
-Este programa da las bases para el control de los servos dinamixel. Sin embargo seg�n la p�gina de su documentaci�n:
+Este programa da las bases para el control de los servos dinamixel. Sin embargo según la página de su documentación:
 
 - [emanual_dinamixel](https://github.com/ROBOTIS-GIT/emanual/blob/master/docs/en/software/dynamixel/dynamixel_sdk/device_setup.md)
 
-El servo AX-18A no tiene pruebas realizadas con ninguno de los dos protocolos existentes, por lo que los porgramas se tendr�n que escribir sin ayuda de esta biblioteca.
+El servo AX-18A no tiene pruebas realizadas con ninguno de los dos protocolos existentes, por lo que los programas se tendrán que escribir sin ayuda de esta biblioteca.
+
+![Servo AX-18A](https://emanual.robotis.com/assets/images/dxl/ax/ax-18a_product.png)
 
 - [Documentacion_AX-18A](https://emanual.robotis.com/docs/en/dxl/ax/ax-18a/)
 
-En la liga anterior se puede encontrar informaci�n �til como la tabla de control de las direcciones de memoria (necesarias para activar el motor), especificaciones, los diferentes Baud Rate disponibles para este modelo, el toque m�ximo, etc.
+En la liga anterior se puede encontrar información útil como la tabla de control de las direcciones de memoria (necesarias para activar el motor), especificaciones, los diferentes Baud Rate disponibles para este modelo, el toque máximo, etc.
+
+**Información importante :** Se intentó instalar DynamixelSDK para probar cada servomotor AX-18A desde: Python, Matlab (Linux), Rapberry Pi, siguiendo los pasos dados por el canal de Youtube "ROBOTIS", sin ningún exito.
+- [Canal de Youtube ROBOTIS](https://www.youtube.com/@ROBOTISCHANNEL)
 
 ### Recomendaciones
 
-Para encender la jetson nano asegure de tener la microSD en su respectiva ranura, y si se alimenta la tarjeta a trav�s del Jack y eliminador el jumper J48 se debe tener puesto, si la alimenta es a trav�s del puerto microusb entonces no deber� tener el jumper puesto.
+Para encender la jetson nano asegure de tener la microSD en su respectiva ranura, y si se alimenta la tarjeta a través del Jack y eliminador el jumper J48 se debe tener puesto, si la alimenta es a través del puerto microusb entonces no deberá tener el jumper puesto.
+
+![Jumper](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/60000647763/original/JaDTuaN1h_u7vfAwro8k5rKgyWRI1GLQnw.png?1579676526)
 
 
 
