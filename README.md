@@ -47,9 +47,7 @@ Existen diversas aplicaciones que puede realizar el robot, sin embargo, es de vi
 
 ## Desarrollo
 
-**Instalación del visor RealSense**
-
-**Simplificación de polígonos sobre el CAD del ensamble**
+## Simplificación de polígonos sobre el CAD del ensamble
 
 Para este punto es necesario disminuir considerablemente los polígonos con la finalidad de ahorrar recursos gráficos y de memoria a la hora de implementar el CAD en diferentes softwares de simulación que permitan analizar el comportamiento del robot móvil. La simplificación se llevó a cabo mediante los siguientes pasos:
 1.  El CAD completo se encuentra en OnShape [[4]](#4), en el cual se descargaron únicamente las partes significativas del ensamble en formato “STEP”. Esto último es       esencial, pues las piezas se modificaron en SolidWorks para posteriormente realizar el urdf.
