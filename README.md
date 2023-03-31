@@ -234,6 +234,25 @@ Se pudo conluir exitosamente la instalación del visor realsense con el que se p
 
 ## Reporte: Primera semana 
 
+Nombres de los integrantes:
+- Xavier Emmanuel Domínguez Grajales
+- Mel Kluivert Russel Capcha Chanca
+- Emilio Morales Luna
+- David Essaú López González
+
+## Viernes 24 de marzo de 2023
+
+En esta ocasión, antes de comenzar con la realización del proyecto, verificamos el número de piezas del robot y, que todas ellas, estén en condiciones óptimas y no existan faltantes.
+
+El número de piezas correspondientes al chasís del robot es correcto. Todas tienen posibilidad de ser ensambladas, sin embargo, el primer inconveniente que se encontró fue el de los tornillos que se necesitarán para unir el Dynamixel MX-12W Servo Motor que se atornilla a las llantas. Logramos ver que la medida necesaria de tornillos que entrarán perfectamente en los orificios diseñados previamente son los M2 de 6mm. La zona de trabajo sólo contaba con tornillos de 3M. El número ideal de unidades que deben se conseguidas es de aproximadamente 12. Así quedan por completo satisfechos todos los requerimientos. 
+
+![image](https://github.com/mrg-mex/Proyecto_4_sem_2023-1/blob/main/Imagenes_Videos/photo1679955740(1).jpeg?raw=true)
+Figura 1 Área de trabajo
+
+Para continuar con una visualización del proyecto, será necesario realizar la transformación del documento de CAD a un formato que pueda ser leído por Fussion 360. Para esto, será necesario descargar el software del CAD para tener una mejor manipulación del modelo
+
+
+
 ## Autores
 
 | Iniciales  | Description |
