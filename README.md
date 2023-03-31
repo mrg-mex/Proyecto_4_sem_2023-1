@@ -230,6 +230,10 @@ Figura 20. Vistas en tiempo real con las cámaras de profundidad
 # Real Sense Viewer
 Se pudo conluir exitosamente la instalación del visor realsense con el que se podrán hacer ensayos y pruebas con ROS para posteriormente generar el reconocimiento de trayectoria, objetos u otros elementos. Durante esta instalación se tuvieron problemas que no estaban documentados de acuerdo a las guías de JetsonHacksNano (Autor guía de la instalación) y por eso fue necesario emplear métodos ligeramente distintos de instalación que sirven como una alternativa en caso de que se encuentre el mismo problema en situaciones similares.
 
+#Semestre 2023-2
+
+#Reporte: Primera semana 
+
 ## Autores
 
 | Iniciales  | Description |
