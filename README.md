@@ -232,7 +232,7 @@ Se pudo conluir exitosamente la instalación del visor realsense con el que se p
 
 # Semestre 2023-2
 
-## Reporte: Primera semana 
+## Reporte:
 
 Nombres de los integrantes:
 - Xavier Emmanuel Domínguez Grajales
@@ -240,18 +240,31 @@ Nombres de los integrantes:
 - Emilio Morales Luna
 - David Essaú López González
 
-## Viernes 24 de marzo de 2023
-
 En esta ocasión, antes de comenzar con la realización del proyecto, verificamos el número de piezas del robot y, que todas ellas, estén en condiciones óptimas y no existan faltantes.
 
-El número de piezas correspondientes al chasís del robot es correcto. Todas tienen posibilidad de ser ensambladas, sin embargo, el primer inconveniente que se encontró fue el de los tornillos que se necesitarán para unir el Dynamixel MX-12W Servo Motor que se atornilla a las llantas. Logramos ver que la medida necesaria de tornillos que entrarán perfectamente en los orificios diseñados previamente son los M2 de 6mm. La zona de trabajo sólo contaba con tornillos de 3M. El número ideal de unidades que deben se conseguidas es de aproximadamente 12. Así quedan por completo satisfechos todos los requerimientos. 
+El número de piezas correspondientes al chasís del robot es correcto. Todas tienen posibilidad de ser ensambladas, sin embargo, el primer inconveniente que se encontró fue el de los tornillos que se necesitarán para unir el Dynamixel MX-12W Servo Motor que se atornilla a las llantas. Logramos ver que la medida necesaria de tornillos que entrarán perfectamente en los orificios diseñados previamente son los M4.  
 
 ![image](https://github.com/mrg-mex/Proyecto_4_sem_2023-1/blob/main/Imagenes_Videos/photo1679955740(1).jpeg?raw=true)
-Figura 1 Área de trabajo
+                                                                        Figura 1 Área de trabajo
 
-Para continuar con una visualización del proyecto, será necesario realizar la transformación del documento de CAD a un formato que pueda ser leído por Fussion 360. Para esto, será necesario descargar el software del CAD para tener una mejor manipulación del modelo
+Para continuar con una visualización del proyecto, será necesario realizar la transformación del documento de CAD a un formato que pueda ser leído por Fussion 360. Para esto, será necesario descargar el software del CAD para tener una mejor manipulación del modelo.
 
+Una vez con nuestro modelos, vimos que habían cambios que hacer con alguos elementos del chasis.
 
+![image](Imagenes_Videos/Fusion_mpu.png)
+                                                                              Figura 2 Fusion 360
+
+El power bay que se había impreso no cumplía con los requerimientos que necesitábamos, ya que se tenía contemplado el componente Bosch GY-BMI160 6DOF IMU Board,
+sin embargo optaron por un MPU9250, que tiene medidas distintas, así que decidimos realizar un modelo en 3D e imprimrlo. El resultado se adjuntará a la figura 3.
+
+![image](Imagenes_Videos/Electronic_Bay2.jpeg)
+                                                      Figura 3 Electronic_Bay
+
+También durante nuestras visitas, una pieza que va conectada al motor Dinamyxel y las llantas se perdió, entonces volvimos a imprimir en dejando como producto final la siguiente. 
+
+![image](Imagenes_Videos/Motor_Dinama.jpeg)
+                                                          Figura 4 Componente_3D
+                                           
 
 ## Autores
 
@@ -264,6 +277,9 @@ Para continuar con una visualización del proyecto, será necesario realizar la 
 | **KDR**  | Kevin De la Rosa Romero [GitHub profile](https://github.com/KevinDLRR) |
 | **VSJE**  | Velazquez Sanchez Jose Emiliano [GitHub profile](pendiente) |
 | **RIJL**  | Rivera Ibarra Juan Luis [GitHub profile](pendiente) |
+| **EML**  | Emilio Morales Luna [GitHub profile](https://github.com/EngineerEmilio) |
+| **XEDG**  | Xavier Emmanuel Domínguez Grajales [GitHub profile](https://github.com/Xavier-Grajales) |
+| **XEDG**  | Mel Kluivert Russel Capcha Chanca [GitHub profile](https://github.com/Mel-Capcha-C) |
 
 
 ## Referencias
