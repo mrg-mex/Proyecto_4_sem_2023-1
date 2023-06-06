@@ -255,16 +255,16 @@ Una vez con nuestro modelos, vimos que habían cambios que hacer con alguos elem
                                                                               Figura 2 Fusion 360
 
 El power bay que se había impreso no cumplía con los requerimientos que necesitábamos, ya que se tenía contemplado el componente Bosch GY-BMI160 6DOF IMU Board,
-sin embargo optaron por un MPU9250, que tiene medidas distintas, así que decidimos realizar un modelo en 3D e imprimrlo. El resultado se adjuntará a la figura 3.
+sin embargo sólo  poseíamos un MPU9250, que tiene medidas distintas. Por lo tanto la nueva IMU no satsifacía con los parámetros de diseño, por ello decidimos realizar un modelo en 3D con las medidas actualizadas y lo imprimimos. El resultado se adjuntará a la figura 3.
 
 ![image](Imagenes_Videos/Electronic_Bay2.jpeg)
                                                       Figura 3 Electronic_Bay
 
-También durante nuestras visitas, una pieza que va conectada al motor Dinamyxel y las llantas se perdió, entonces volvimos a imprimir en dejando como producto final la siguiente. 
+También durante nuestras visitas, una pieza que va conectada al motor Dinamyxel y las llantas se perdió. Para ello tomamos el modelo de Fusion, buscamos la pieza que nos faltaba y lo exportamos a UltimakerCURA  entonces imprimimos nuestra pieza dando como resultado la siguiente figura. Una vez con esto hecho tomamos los tornillos M2 para unir nuetras piezas impresas con el motor Dinamyxel.
 
 ![image](Imagenes_Videos/Motor_Dinama.jpeg)
                                                           Figura 4 Componente_3D
-                                           
+Posteriormente revisamos las antenas de Wi-Fi que van directamente conectada al Jetsn
 
 ## Autores
 
