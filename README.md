@@ -264,7 +264,7 @@ También durante nuestras visitas, una pieza que va conectada al motor Dinamyxel
 
 ![image](Imagenes_Videos/Motor_Dinama.jpeg)
                                                           Figura 4 Componente_3D
-Al ver la documentación revisamos las antenas, que tienen que estar conectadas a un módulo Wi-Fi, y éste módulo va conectado al Jetson 
+Al ver la documentación revisamos las antenas, que tienen que estar conectadas a un módulo Wi-Fi, y éste módulo va conectado al Jetson. El proceso consiste en retirar la placa SOM, que se encuentra conectada al disipador de calor de la placa portadora (donde se encuentran los pines GPIO, conectores USB, etc.), una vez retiadaesa piezahí podemos conectar la placa Wi-Fi
 
 ![image](Imagenes_Videos/Jetson.jpeg)
 Figura 5 Jetson
