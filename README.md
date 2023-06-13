@@ -264,8 +264,10 @@ También durante nuestras visitas, una pieza que va conectada al motor Dinamyxel
 
 ![image](Imagenes_Videos/Motor_Dinama.jpeg)
                                                           Figura 4 Componente_3D
-Posteriormente revisamos las antenas de Wi-Fi que van directamente conectada al Jetsn
+Al ver la documentación revisamos las antenas, que tienen que estar conectadas a un módulo Wi-Fi, y éste módulo va conectado al Jetson 
 
+![image](Imagenes_Videos/Jetson.jpeg)
+Figura 5 Jetson
 ## Autores
 
 | Iniciales  | Description |
